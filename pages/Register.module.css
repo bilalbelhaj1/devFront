@@ -1,0 +1,112 @@
+.registerContent {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.registerForm {
+    width: 588px;
+    height: fit-content;
+    padding: 10px 0;
+    color: #F0F8FF;
+    border-radius: 14px;
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerText {
+    width: 588px;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageReg{
+    height: 400px;
+}
+
+.registerText .registerTitleOne, .registerText .registerTitleTwo {
+    font-size: 60px;
+}
+
+.registerText .registerTitleTwo span {
+    color: #4E2DA1;
+}
+
+.switchAuth {
+    display: flex;
+    gap: 26px;
+}
+
+.signin, .signup {
+    color: #F0F8FF;
+    position: relative;
+}
+
+.signup::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 7px;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.labelInput label {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.labelInput input, .labelInput select {
+    width: 345px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+.formBtnAuth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelPolicy {
+    width: 345px;
+    display: flex;
+    align-items: center;
+}
+
+.policy {
+    font-size: 10px;
+}
+
+.formBtnAuth button {
+    margin-top: 13px;
+    width: 113px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #F0F8FF;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    color: #0c0c0c;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
