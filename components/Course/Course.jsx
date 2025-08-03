@@ -1,4 +1,4 @@
-import './Courseecard.css';
+import './Course.css';
 import { Link } from 'react-router-dom';
 
 const Course = ({ course }) => {
