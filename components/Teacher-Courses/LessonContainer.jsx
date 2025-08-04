@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addLesson } from "../../pages/teacher/api"; // adjust this path if needed
+import { addLesson } from "../../pages/Teacher/api"; // adjust this path if needed
 
 export default function LessonsContainer({ lessons, onEdit, onDelete, courseId, onAdd }) {
   const [isAdding, setIsAdding] = useState(false);

@@ -1,12 +1,13 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
 import logoAuth from '/logo-auth.svg'
 import lineAuth from '/line-auth.svg'
-import styles from './Login.module.css'
 import Message from '../components/Message/Message'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context/AuthProvider'
+import Layout from '../layouts/Student/Layout'
+import styles from './Login.module.css'
+
+
 const Login = () => {
   const { login } = React.useContext(AuthContext);
   const navigate = useNavigate();
@@ -48,8 +49,7 @@ const Login = () => {
     }
   }
   return (
-    <>
-      <Header />
+    <Layout>
       {msg && (
         <Message
           message={msg.message}
@@ -95,8 +95,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

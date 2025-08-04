@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import './CourseInfo.css';
 import BenefitsList from "../Benefits/Benefits";
 import PrereQuisites from "../prerequisites/Prerewuesites";
 import ResourceList from "../Resource/Resource";
+import './CourseInfo.css';
 const CourseInfoForm = ({ onChange, onsubmit }) => {
   const [benefits, setBenefits] = useState([]);
   const [prerequisites, setPrerequisites] = useState([]);

@@ -41,7 +41,7 @@ const Course = ({ course }) => {
             </div>
           </div>
 
-          <Link className="xLink_33" to={`/course/${course._id}`}>
+          <Link className="xLink_33" to={`/course_enroll/${course._id}`}>
             View Course
           </Link>
         </div>

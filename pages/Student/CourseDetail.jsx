@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './CourseDetail.css';
 import imgCourse from '/course-img.svg';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Student/Header/Header';
+import Footer from '../../components/Student/Footer/Footer';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 

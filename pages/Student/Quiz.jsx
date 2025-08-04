@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Student/Header/Header';
+import Footer from '../../components/Student/Footer/Footer';
 import axios from 'axios';
 import './Quiz.css';
 

@@ -1,5 +1,5 @@
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import Header from '../../components/Student/Header/Header'
+import Footer from '../../components/Student/Footer/Footer'
 import imgUser from '/user-teacher.svg'
 import imgCourse from '/icon_courses.svg'
 import imgPeople from '/people.svg'

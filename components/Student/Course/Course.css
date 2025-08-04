@@ -1,6 +1,6 @@
 .xCrdr_928 {
   width: 385px;
-  height: 450px;
+  
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -18,7 +18,7 @@
   color: #f0f8ff;
   padding: 20px;
   border-radius: 0 0 14px 14px;
-  height: 350px;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -1,8 +1,8 @@
 import searchCourse from '/search-courses.svg'
 import filterCpurse from '/filter-course.svg'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import Course from '../components/Course/Course'
+import Header from '../../components/Student/Header/Header'
+import Footer from '../../components/Student/Footer/Footer'
+import Course from '../../components/Student/Course/Course'
 import { useState, useEffect, useMemo } from 'react'
 import './Courses.css'
 

@@ -1,31 +1,33 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../pages/Home'
-import Courses from '../pages/Courses'
+import Home from '../pages/Student/Home'
+import Courses from '../pages/Student/Courses'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import './App.css'
 import Test from '../pages/test'
 import ProtectedRoute from '../components/ProtectedRoute'
-import TeacherDashboard from '../pages/teacher/dashboard';
-import TeacherCourses from '../pages/teacher/courses';
-import AddCoursePage from '../pages/teacher/AddCourse';
-import TeacherProfilePage from '../pages/teacher/TeacherProfile'
-import TeacherCourse from '../pages/teacher/course'
-import CourseDetail from '../pages/CourseDetail'
-import Lesson from '../pages/Lesson'
-import Quiz from '../pages/Quiz'
+import TeacherDashboard from '../pages/Teacher/dashboard';
+import TeacherCourses from '../pages/Teacher/courses';
+import AddCoursePage from '../pages/Teacher/AddCourse';
+import TeacherProfilePage from '../pages/Teacher/TeacherProfile'
+import TeacherCourse from '../pages/Teacher/course'
+import CourseDetail from '../pages/Student/CourseDetail'
+import Lesson from '../pages/Student/Lesson'
+import Quiz from '../pages/Student/Quiz'
 import Dashboard from '../pages/Dashboard'
 import Users from '../pages/Users'
 import CoursesCrud from '../pages/CoursesCrud'
 import LessonsCrud from '../pages/LessonsCrud'
-import EditCoursePage from '../pages/teacher/course'
+import EditCoursePage from '../pages/Teacher/course'
 import AdminLogin from '../pages/admin-login'
 import Unauthorized from '../pages/Unauthorized'
-import EnrolledCourses from '../pages/EnrolledCourses'
-import StudentProfile from '../pages/StudentProfile'
-import TeacherProfile from '../pages/TeacherProfile'
-import Course from '../pages/Course'
-import CourseEnroll from '../pages/CourseEnroll'
+import EnrolledCourses from '../pages/Student/EnrolledCourses'
+import StudentProfile from '../pages/Student/StudentProfile'
+import TeacherProfile from '../pages/Student/TeacherProfile'
+import Course from '../pages/Student/Course'
+import CourseEnroll from '../pages/Student/CourseEnroll'
+import Checkout from '../pages/Student/checkoutPage'
+import PaymentSuccess from '../pages/Student/PaymentSuccess'
 function App() {
   return (
     <BrowserRouter>
@@ -65,6 +67,7 @@ function App() {
         <Route path="/course-enroll" element={<CourseEnroll />} />
         <Route path="/student" element={<StudentProfile />} />
         <Route path="/teacher" element={<TeacherProfile />} />
+        <Route path="/payment-success/:courseId" element={<PaymentSuccess />} />
         <Route
           path='/test'
           element={
@@ -73,6 +76,9 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path='/course_no' element={<Course />} />
+        <Route path='/checkout/:tutorialId' element={<Checkout/>}/>
+        <Route path='/course_enroll/:courseId' element={<CourseEnroll />} />
         <Route path='/enrolled' element={<EnrolledCourses />} />
         <Route path='/unauthorized' element={<Unauthorized />} />
         <Route path="/course/:tutorialId" element={<CourseDetail />} />

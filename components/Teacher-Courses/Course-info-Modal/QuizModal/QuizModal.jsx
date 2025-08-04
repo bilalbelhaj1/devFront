@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchQuiz } from "../../../../pages/teacher/api";
+import { fetchQuiz } from "../../../../pages/Teacher/api";
 
 export default function QuizModal({ courseId, questionIndex, onClose, onSave }) {
   const [quizId, setQuizId] = useState(null);

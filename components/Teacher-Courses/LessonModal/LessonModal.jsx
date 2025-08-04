@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchLesson } from '../../../pages/teacher/api';
+import { fetchLesson } from '../../../pages/Teacher/api';
 export default function LessonModal({ lessonId, onClose, onSave }) {
   const [lesson, setLesson] = useState(null);
   const [form, setForm] = useState({ title: '', description: '' });

@@ -1,24 +1,42 @@
 .registerContent {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 25px;
-    margin-top: 20px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 
 .registerForm {
     width: 588px;
-    height: fit-content;
-    padding: 10px 0;
+    height: 965px;
+    padding: 15px 0;
     color: #F0F8FF;
     border-radius: 14px;
     background-color: #0c0c0c;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 15px;
 }
+
+form {
+    width: 346px;
+    height: 721px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.registerLogo {
+    width: 170px;
+    height: 170px;
+}
+
+.registerLogo img {
+    width: 100%;
+    height: 100%;
+}
+
 .registerText {
     width: 588px;
     height: 196px;
@@ -26,9 +44,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.imageReg{
-    height: 400px;
 }
 
 .registerText .registerTitleOne, .registerText .registerTitleTwo {
@@ -45,6 +60,7 @@
 }
 
 .signin, .signup {
+    font-size: 13px;
     color: #F0F8FF;
     position: relative;
 }
@@ -87,26 +103,21 @@
     align-items: center;
 }
 
-.labelPolicy {
-    width: 345px;
-    display: flex;
-    align-items: center;
-}
-
 .policy {
     font-size: 10px;
 }
 
 .formBtnAuth button {
-    margin-top: 13px;
     width: 113px;
     height: 36px;
     padding: 10px;
     border-radius: 14px;
     background-color: #F0F8FF;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
     color: #0c0c0c;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 400;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

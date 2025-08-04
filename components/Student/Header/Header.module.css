@@ -14,13 +14,13 @@ nav {
   padding: 13px;
 }
 
-.nav-list {
+.navList {
   gap: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.nav-list li .link-nav {
+.navList li .linkNav {
   color: #0c0c0c;
   font-size: 20px;
 }
@@ -47,13 +47,13 @@ nav {
   border: 3px solid #0c0c0c;
   border-radius: 14px;
 }
-.logout-container{
+.logoutContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.logout-container li{
+.logoutContainer li{
   padding: 0 0 0 20px;
   background: #6f6a6a2d;
   display: flex;
@@ -62,7 +62,7 @@ nav {
   height: 50px;
   border-radius: 20px;
 }
-.logout-container li span{
+.logoutContainer li span{
   background: rgb(83, 139, 224);
   margin-left: 10px;
   padding: 0 10px;

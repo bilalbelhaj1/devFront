@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteFaq } from '../../../pages/teacher/api';
+import { deleteFaq } from '../../../pages/Teacher/api';
 
 export default function FaqContainer({ faqs, onEdit, onDelete }) {
   const handleDelete = async (id) => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Lesson.css';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Student/Header/Header';
+import Footer from '../../components/Student/Footer/Footer';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const Lesson = () => {

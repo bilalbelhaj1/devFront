@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Student/Header/Header';
+import Footer from '../../components/Student/Footer/Footer';
 import './EnrolledCourses.css';
 import { Link } from 'react-router-dom';
 import imgCourse from '/course-img.svg';

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createFaq, updateFaq } from '../../../pages/teacher/api';
+import { createFaq, updateFaq } from '../../../pages/Teacher/api';
 
 export default function FaqModal({ courseId, faq, onClose, onSave }) {
   const [form, setForm] = useState({

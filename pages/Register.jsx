@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import logoAuth from '/logo-auth.svg';
 import lineAuth from '/line-auth.svg';
-import styles from './Register.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Message from '../components/Message/Message';
+import Layout from '../layouts/Student/Layout';
+import styles from './Register.module.css';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -53,8 +52,7 @@ const Register = () => {
   };
 
   return (
-    <>
-      <Header />
+    <Layout>
       {msg && (
         <Message
           message={msg.message}
@@ -109,10 +107,8 @@ const Register = () => {
             </div>
 
             <div className={styles.formBtnAuth}>
-              <div className={styles.labelPolicy}>
-                <div className={styles.policy}>
-                  Your personal data will be used to enhance your experience on this website, manage access to your account, and for other purposes outlined in our privacy policy.
-                </div>
+              <div className={styles.policy}>
+                Your personal data will be used to enhance your experience on this website, manage access to your account, and for other purposes outlined in our privacy policy.
               </div>
               <button type="submit">Register</button>
             </div>
@@ -125,8 +121,7 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

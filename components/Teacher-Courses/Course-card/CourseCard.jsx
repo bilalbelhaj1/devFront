@@ -1,6 +1,6 @@
 import React from 'react';
-import './courseCard.css';
 import { FaPen, FaTrash, FaUsers, FaLayerGroup } from 'react-icons/fa';
+import './CourseCard.css';
 
 export default function CourseCard({
   image,
