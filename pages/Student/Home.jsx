@@ -19,7 +19,7 @@ const Home = () => {
     React.useEffect(() => {
         async function getTopCourses() {
             try {
-                const response = await fetch('https://terrific-determination-production-cf17.up.railway.app/api/public/home');
+                const response = await fetch('https://devkingsbackend-production-3753.up.railway.app/api/public/home');
                 const responseData = await response.json();
                 console.log(responseData);
                 setTopCourses(responseData.topCourses)

@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL: "https://terrific-determination-production-cf17.up.railway.app/api/teacher",
+  baseURL: "https://devkingsbackend-production-3753.up.railway.app/api/teacher",
   withCredentials: true, // 👈 this enables sending cookies
 });
 

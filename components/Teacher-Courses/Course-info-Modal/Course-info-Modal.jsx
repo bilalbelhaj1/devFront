@@ -12,7 +12,7 @@ export default function CourseInfoModal({ course, onClose, onSave }) {
 
   const [resources, setResources] = useState(course.resources || []);
   const [thumbnail, setThumbnail] = useState(null);
-  const [imageSrc, setImageSrc] = useState(`https://terrific-determination-production-cf17.up.railway.app/${course.thumbnail}` || '');
+  const [imageSrc, setImageSrc] = useState(`https://devkingsbackend-production-3753.up.railway.app/${course.thumbnail}` || '');
 
   const handleChange = e => {
     const { name, value } = e.target;

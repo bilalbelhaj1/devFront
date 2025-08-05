@@ -25,7 +25,7 @@ const CourseEnroll = () => {
       setError('');
       try {
         const token = localStorage.getItem('accessToken');
-        const res = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/public/course/${courseId}`, {
+        const res = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/public/course/${courseId}`, {
           headers: { 'Authorization': `Bearer ${token}` },
           credentials: 'include'
         });
@@ -106,7 +106,7 @@ const CourseEnroll = () => {
             <div className="hero-course-info">
               <div className='hero-shape-course'></div>
               <div className='hero-course-cover'>
-                <img className='hero-course-cover-img' src={`https://terrific-determination-production-cf17.up.railway.app/${course.thumbnail}` || heroCourse} alt="Thumbnail" />
+                <img className='hero-course-cover-img' src={`https://devkingsbackend-production-3753.up.railway.app/${course.thumbnail}` || heroCourse} alt="Thumbnail" />
                 <div className='hero-cover-info'>
                   <div className='hero-cover-info-teacher'>
                     <div className='hero-cat-info'>

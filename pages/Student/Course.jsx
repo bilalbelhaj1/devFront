@@ -27,7 +27,7 @@ const Course = () => {
           throw new Error('Not authenticated');
         }
 
-        const response = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/student/tutorials/${tutorialId}`, {
+        const response = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/student/tutorials/${tutorialId}`, {
           headers: {
             'Authorization': `Bearer ${accessToken}`
           },

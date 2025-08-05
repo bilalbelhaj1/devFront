@@ -8,7 +8,7 @@ export default function EditCourseCard({course,onEdit}) {
       <div className="edit-course-left">
         <div className="edit-course-image">
           <img
-            src={`https://terrific-determination-production-cf17.up.railway.app/${courseInfo.thumbnail}`}
+            src={`https://devkingsbackend-production-3753.up.railway.app/${courseInfo.thumbnail}`}
             alt="Course Cover"
           />
         </div>

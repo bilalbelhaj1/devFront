@@ -55,7 +55,7 @@ const Users = () => {
     console.log(userData)
 
     if (isAddingUser) {
-      const response = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/admin/users/addAdmin`,{
+      const response = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/admin/users/addAdmin`,{
         method:"POST",
         headers:{
           'Content-Type':'Application/json'
@@ -71,7 +71,7 @@ const Users = () => {
         showMessage('Admin added succefully', 'success')
       }
     } else {
-      const response = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/admin/users/updateUser/${selectedUser._id}`,{
+      const response = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/admin/users/updateUser/${selectedUser._id}`,{
         method:"PUT",
         headers:{
           'Content-Type':'Application/json'

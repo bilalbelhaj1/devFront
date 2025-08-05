@@ -15,7 +15,7 @@ export default function AdminLogin() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login submitted:", formData);
-    fetch(' http://localhost:5000/api/admin/login',{
+    fetch('https://devkingsbackend-production-3753.up.railway.app/api/admin/login',{
         method:'POST',
         headers:{
             'Content-Type':'Application/json'

@@ -7,7 +7,7 @@ import imgCourse from '/course-img.svg';
 import searchCourse from '/search-courses.svg';
 import filterCpurse from '/filter-course.svg';
 
-const BACKEND_URL = 'https://terrific-determination-production-cf17.up.railway.app/'; 
+const BACKEND_URL = 'https://devkingsbackend-production-3753.up.railway.apps'; 
 
 const EnrolledCourses = () => {
   const [searchQuery, setSearchQuery] = useState('');

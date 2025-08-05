@@ -26,7 +26,7 @@ const Login = () => {
       return;
     }
     try {
-      const response = await fetch('https://terrific-determination-production-cf17.up.railway.app/api/auth/login', {
+      const response = await fetch('https://devkingsbackend-production-3753.up.railway.app/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

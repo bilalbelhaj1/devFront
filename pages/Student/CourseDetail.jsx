@@ -21,7 +21,7 @@ const CourseDetail = () => {
           throw new Error('Not authenticated');
         }
 
-        const response = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/student/tutorials/${tutorialId}`, {
+        const response = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/student/tutorials/${tutorialId}`, {
           headers: {
             'Authorization': `Bearer ${accessToken}`
           },
@@ -49,7 +49,7 @@ const CourseDetail = () => {
   const handleLessonClick = async () => {
     try {
       const response = await axios.post(
-        `https://terrific-determination-production-cf17.up.railway.app/api/student/enroll-tutorial/${tutorialId}`,
+        `https://devkingsbackend-production-3753.up.railway.app/api/student/enroll-tutorial/${tutorialId}`,
         {},
         {
           headers: {

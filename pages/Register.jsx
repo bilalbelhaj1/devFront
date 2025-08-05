@@ -31,7 +31,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('https://terrific-determination-production-cf17.up.railway.app/api/auth/register', {
+      const response = await fetch('https://devkingsbackend-production-3753.up.railway.app/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)

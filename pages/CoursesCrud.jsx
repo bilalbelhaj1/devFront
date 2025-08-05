@@ -13,7 +13,7 @@ const CoursesCrud = () => {
     };
   useEffect(()=>{
     const fetchCourses = async ()=>{
-      const response = await fetch('https://terrific-determination-production-cf17.up.railway.app/api/admin/courses/all');
+      const response = await fetch('https://devkingsbackend-production-3753.up.railway.app/api/admin/courses/all');
       const data = await response.json();
       if(!response.ok){
         alert(data.message);
@@ -26,7 +26,7 @@ const CoursesCrud = () => {
 
   const handleDelete =async (courseId) => {
     setCoursesData(prev => prev.filter(c => c.id !== courseId));
-    const response = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/admin/courses/${courseId}`,{
+    const response = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/admin/courses/${courseId}`,{
       method:'DELETE',
       headers:{
         'Content-Type':'Application/json'

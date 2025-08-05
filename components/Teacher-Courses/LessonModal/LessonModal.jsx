@@ -21,7 +21,7 @@ export default function LessonModal({ lessonId, onClose, onSave }) {
           }))
         : [];
       setResources(extractedResources);
-      setVideoPreview(`https://terrific-determination-production-cf17.up.railway.app/${data.videoUrl}`);
+      setVideoPreview(`https://devkingsbackend-production-3753.up.railway.app/${data.videoUrl}`);
     });
   }, [lessonId]);
 

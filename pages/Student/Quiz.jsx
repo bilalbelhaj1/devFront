@@ -43,7 +43,7 @@ const Quiz = () => {
         setLoading(true);
         const accessToken = localStorage.getItem('accessToken');
         if (!accessToken) throw new Error('Not authenticated');
-        const res = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/student/quizzes/${tutorialId}`, {
+        const res = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/student/quizzes/${tutorialId}`, {
           headers: { 'Authorization': `Bearer ${accessToken}` }
         });
         if (!res.ok) {
@@ -98,7 +98,7 @@ const Quiz = () => {
 
       // Submit to backend
       const response = await axios.post(
-        `https://terrific-determination-production-cf17.up.railway.app/api/student/quizzes/${tutorialId}/submit`,
+        `https://devkingsbackend-production-3753.up.railway.app/api/student/quizzes/${tutorialId}/submit`,
         { answers: answersArray },
         {
           headers: { 'Authorization': `Bearer ${accessToken}` }

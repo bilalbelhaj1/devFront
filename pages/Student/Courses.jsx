@@ -62,7 +62,7 @@ function Courses() {
         const fetchCourses = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('https://terrific-determination-production-cf17.up.railway.app/api/public/AllCourses');
+                const response = await fetch('https://devkingsbackend-production-3753.up.railway.app/api/public/AllCourses');
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch courses');

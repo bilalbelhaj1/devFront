@@ -26,7 +26,7 @@ const Lesson = () => {
                 const accessToken = localStorage.getItem('accessToken');
                 if (!accessToken) throw new Error('Not authenticated');
                 // Fetch lesson details
-                const lessonRes = await fetch(`https://terrific-determination-production-cf17.up.railway.app/api/student/lessons/${lessonId}`, {
+                const lessonRes = await fetch(`https://devkingsbackend-production-3753.up.railway.app/api/student/lessons/${lessonId}`, {
                     headers: { 'Authorization': `Bearer ${accessToken}` }
                 });
                 if (!lessonRes.ok) {

@@ -15,7 +15,7 @@ export default function CourseCard({
   return (
     <div className="course-card">
       <div className="course-img">
-        <img src={`https://terrific-determination-production-cf17.up.railway.app/${image}`} alt="Course" />
+        <img src={`https://devkingsbackend-production-3753.up.railway.app/${image}`} alt="Course" />
       </div>
       <div className="course-info">
         <div className="course-header">
