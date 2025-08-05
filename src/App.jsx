@@ -26,7 +26,6 @@ import StudentProfile from '../pages/Student/StudentProfile'
 import TeacherProfile from '../pages/Student/TeacherProfile'
 import Course from '../pages/Student/Course'
 import CourseEnroll from '../pages/Student/CourseEnroll'
-import Checkout from '../pages/Student/checkoutPage'
 import PaymentSuccess from '../pages/Student/PaymentSuccess'
 function App() {
   return (
@@ -77,7 +76,6 @@ function App() {
           }
         />
         <Route path='/course_no' element={<Course />} />
-        <Route path='/checkout/:tutorialId' element={<Checkout/>}/>
         <Route path='/course_enroll/:courseId' element={<CourseEnroll />} />
         <Route path='/enrolled' element={<EnrolledCourses />} />
         <Route path='/unauthorized' element={<Unauthorized />} />
